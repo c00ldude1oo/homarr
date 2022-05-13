@@ -10,7 +10,10 @@
   <a href = "https://discord.gg/aCsmEV5RgA" > <img src="https://discordapp.com/api/guilds/972958686051962910/widget.png?style=shield" > </a>
 </p>
 </p>
-
+[![Build](https://github.com/ajnart/homarr/actions/workflows/docker.yml/badge.svg)](https://github.com/ajnart/homarr/actions/workflows/docker.yml)
+<a href="https://gitmoji.dev">
+  <img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square" alt="Gitmoji">
+</a>
 # 📃 Table of Contents
 - [📃 Table of Contents](#-table-of-contents)
 - [🚀 Getting Started](#-getting-started)
@@ -26,7 +29,7 @@
 ## ℹ️ About
 
 Homarr is a simple and lightweight homepage for your server, that helps you easily access all of your services in one place.
-    
+
 **[⤴️ Back to Top](#-table-of-contents)**
 
 ## ⚡ Installation
@@ -75,12 +78,12 @@ _Requirements_:
   - _Examples:_
     - NodeJS serve: `npm i -g serve` or `yarn global add serve` & `serve ./out`
     - python http.server: `python -m http.server 7474 --directory out`
-    
+
 **[⤴️ Back to Top](#-table-of-contents)**
 
 # 💖 Contributing
 You can contribute by [Starting a discussion](https://github.com/ajnart/homarr/discussions), [Submitting Bugs](https://github.com/ajnart/homarr/issues/new), [Requesting Features](https://github.com/ajnart/homarr/issues/new), or [Making a pull request](https://github.com/ajnart/homarr/compare)!
 
 All contributions are highly appreciated.
-    
+
 **[⤴️ Back to Top](#-table-of-contents)**
