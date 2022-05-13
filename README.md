@@ -4,10 +4,12 @@
   <p align = "center">
     A homepage for <i>your</i> server.
   <br/>
-  <a href = "https://github.com/ajnart/homarr/deployments/activity_log?environment=Production" > <strong> Demo ↗️ </strong> </a> • <a href = "#install" > <strong> Install ➡️ </strong> </a>
+  <a href = "https://github.com/ajnart/homarr/deployments/activity_log?environment=Production" > <strong> Demo ↗️ </strong> </a> • <a href = "#-installation" > <strong> Install ➡️ </strong> </a>
   <br />
   <br />
-  <a href = "https://discord.gg/aCsmEV5RgA" > <img src="https://discordapp.com/api/guilds/972958686051962910/widget.png?style=shield" > </a>
+    <i>Join the discord!</i>
+  <br />
+    <a href = "https://discord.gg/aCsmEV5RgA" > <img src="https://discordapp.com/api/guilds/972958686051962910/widget.png?style=shield" > </a>
 </p>
 </p>
 [![Build](https://github.com/ajnart/homarr/actions/workflows/docker.yml/badge.svg)](https://github.com/ajnart/homarr/actions/workflows/docker.yml)
@@ -67,19 +69,15 @@ _Requirements_:
 - [Git](https://git-scm.com/downloads)
 - [NodeJS](https://nodejs.org/en/) _(Latest or LTS)_
 - [Yarn](https://yarnpkg.com/)
-- Some web server
 
 **Installing**
 
 - Clone the GitHub repo: `git clone https://github.com/ajnart/homarr.git` & `cd homarr`
 - Install all dependencies: `yarn install`
-- Build the source: `yarn export`
-- Start a web server (Any web server will work):
-  - _Examples:_
-    - NodeJS serve: `npm i -g serve` or `yarn global add serve` & `serve ./out`
-    - python http.server: `python -m http.server 7474 --directory out`
 
-**[⤴️ Back to Top](#-table-of-contents)**
+- Build the source: `yarn build`
+- Start the NextJS web server: ``yarn start``
+- *Note: If you want to update the code in real time, launch with ``yarn dev``*
 
 # 💖 Contributing
 You can contribute by [Starting a discussion](https://github.com/ajnart/homarr/discussions), [Submitting Bugs](https://github.com/ajnart/homarr/issues/new), [Requesting Features](https://github.com/ajnart/homarr/issues/new), or [Making a pull request](https://github.com/ajnart/homarr/compare)!
