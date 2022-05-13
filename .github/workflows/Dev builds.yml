@@ -91,8 +91,10 @@ jobs:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           # generate Docker tags based on the following events/attributes
           tags: |
-            type=edge,branch=dev,enable=${{ github.ref_name == 'dev' }}
+            type=edge,branch=dev,value=dev,enable=${{ github.ref_name == 'dev' }}
             type=pep440,pattern={{version}}
+            type=raw,value={{date 'YYYYMMDD'}}
+            type=sha
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
       - name: Set up Docker Buildx
