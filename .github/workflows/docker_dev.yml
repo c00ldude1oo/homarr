@@ -9,10 +9,10 @@ on:
  #     - v*
   pull_request:
   workflow_dispatch:
-    inputs:
-      tags:
-        requierd: true
-        description: 'Tags to deploy to'
+  #  inputs:
+   #   tags:
+  #      requierd: true
+   #     description: 'Tags to deploy to'
 
 env:
   # Use docker.io for Docker Hub if empty
