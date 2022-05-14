@@ -5,8 +5,8 @@ name: Development CI
 # documentation.
 on:
   push:
-    tags:
-      - v*
+ #   tags:
+ #     - v*
   pull_request:
   workflow_dispatch:
     inputs:
