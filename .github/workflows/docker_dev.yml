@@ -135,11 +135,11 @@ jobs:
         id: checkUser
         with:
           require: 'write'
-          
-      - run: echo "user-permission = ${{ steps.check.outputs.user-permission }} require-result = ${{ steps.check.outputs.require-result }} check-result = ${{ steps.check.outputs.check-result }}"
+
+      - run: echo "user-permission = ${{ steps.checkUser.outputs.user-permission }} require-result = ${{ steps.checkUser.outputs.require-result }} check-result = ${{ steps.checkUser.outputs.check-result }}"
 
       - name: Login to GHCR
-        if: steps.check.outputs.require-result == 'true'
+        if: steps.checkUser.outputs.require-result == 'true'
         uses: docker/login-action@v2
         with:
           registry: ghcr.io
@@ -151,6 +151,6 @@ jobs:
         with:
           platforms: linux/amd64,linux/arm64,linux/arm/v7
           context: .
-          push: ${{ steps.check.outputs.require-result == 'true' }}
+          push: ${{ steps.checkUser.outputs.require-result == 'true' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
